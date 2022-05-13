@@ -47,7 +47,6 @@ p {
     margin: auto;
 }
 
-
 header {
     top: 0;
     /* position: fixed;*/
@@ -55,12 +54,82 @@ header {
     display: flow-root;
 }
 
+.logo {
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 30%;
+    float: left;
+}
+
+.seperator {
+    height: 10px;
+    width: 100%;
+    box-shadow: 0 4px 2px -2px gray;
+}
 
 .container {
     display: flow-root;
-
     margin: 15px auto;
 }
+
+.mySkills {
+    text-align: center;
+    width: 100%;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+}
+
+.heroCard {
+    padding: 25px;
+    width: 50%;
+    vertical-align: top;
+}
+
+.skillsCard {
+    padding: 25px;
+    width: 300px;
+    vertical-align: top;
+}
+
+.workGrid {
+    display: grid
+}
+
+.item1 {
+    grid-area: myArea;
+}
+
+.item2 {
+    grid-area: myArea;
+}
+
+.item3 {
+    grid-area: myArea;
+}
+
+.item4 {
+    grid-area: myArea;
+}
+
+.grid-Contaner {
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 2;
+    grid-template-areas: 'myArea myArea myArea myArea';
+}
+
+
+
+
 
 footer {
     padding-bottom: 10px;
@@ -77,18 +146,6 @@ footer,
     margin: 15px auto
 }
 
-.seperator {
-    height: 10px;
-    width: 100%;
-    box-shadow: 0 4px 2px -2px gray;
-}
-
-.logo {
-    background-repeat: no-repeat;
-    background-position: left;
-    width: 30%;
-    float: left;
-}
 
 .nav {
     /* display: inline-block; */
@@ -104,6 +161,8 @@ footer,
     height: 600px;
     padding: 25px;
 }
+
+/*  My UX Skills section coded using CSS flex */
 
 .row,
 flex {
@@ -132,7 +191,11 @@ flex {
 }
 
 .column img.full {
-    width: 100%
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
 }
 
 .content {
@@ -254,4 +317,86 @@ li {
     transition: -webkit-transform .2s ease-in-out;
     transition: transform .2s ease-in-out;
     transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+
+
+.container {
+    display: flex;
+    font-family: sans-serif;
+    background-color: rgb(240, 240, 240);
+  }
+  .description {
+    padding: 1rem;
+    flex-grow: 1;
+    background-color: white;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+    border-radius: 1rem;
+    margin: 1rem 1rem;
+  }
+  .container .description:first-child  {
+    background-color: red
+  }
+  .container .description:last-child  {
+    background-color: blue
+  }
+  .description:hover {
+    box-shadow: 1px 1px 9px 3px rgba(0, 0, 0, 0.2)
+  }
+  
+  button {
+    padding: .5em;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: solid 1px #048d9b;
+    color: #048d9b;
+    background-color: white;
+      display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    line-height: 1.5;
+    border-radius: .5rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  button:hover {
+    color: white;
+    background-color: #048d9b;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px,
+      rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
+    font-weight: medium;
+  }
+  button:focus {
+    outline-width: 3px;
+    outline-style: dashed;
+    outline-color: #05b1c3;
+  }
+  
+  hr {
+    margin: 1rem 0
+  }
+  .flex-alignment-container {
+    height: 15rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+  }
+  .flex-alignment-container > div {
+    background-color: gray;
+    min-width: 1rem;
+    min-height: 1rem;
+    margin: .5rem; 
+  }
+
+#fixed-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }
