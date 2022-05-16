@@ -8,35 +8,32 @@
 </head>
 
 <body>
-        <!-- Header section here -->
-        <header>
-            <div class="logo">
-                <img src="images/logo.png" alt="Cindy Chan" height="80px" />
-            </div>
-        <!-- Nav section here -->            
-            <div class="nav">
-                <h3>
-                    <ul>
-                        <li><a href="index.html">Cindy Chan</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </h3>
-            </div>
-        </header>
-
+<!-- Header section here -->
+<section class="top-nav">
+        <div>
+            <img src="images/logo.png" alt="Cindy Chan" height="80px" />
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+    <ul class="menu">
+        <li><a href="index.html">Cindy Chan</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</section>
         <div class="seperator"></div>
-        <!-- Hero section here -->  
-        <section class="row">
+<!-- Hero section here -->  
+<section class="row">
         <div class="container">
-
                 <div class="column ">
                     <div class="containedwidth">
                         <h2 class="f-left">Hey there, <img src="images/hand.png" class="hand"> </h2> <br>
-                        <div class="title">
-                            <div class="titleLine1">I’m <span class="blueText">Cindy Chan</span></div>
-                            <div class="titleLine2 bold"><span class="blueText ">UX/UI Designer</span></div>
+                        <div>
+                            <h2><span id="im">I’m</span> <span id="cindyChan">Cindy Chan</span><br>
+                            <span id="uxuiDesigner">UX/UI Designer</span></h2>
                         </div>
                         <p>
                             Toronto based, I’m interested in creating better user experiences and
@@ -47,46 +44,34 @@
                     </div>
                 </div>
                 <div class="column"><img src="images/hero.png" width="100%"></div>
-            </section>
         </div>
+</section>
 
-        <!-- Portfolio section here --> 
-        <div class="container">
-            <section class="row-fluid">
-                <div class=" ">
-                    <div class="containedwidth">
-                        <h2 class="blueText a-center"><a id="skills">PORTFOLIO</a></h2> <br>
-                        <div class="tile col-3">
-                            <div clss="tileIMG">Image</div>
-                            <div class="name">Title</div>
-                            <div class="projectName">project name</div>
-                            <div class="tileContentToggle">></div>
-                        </div>
-                        <div class="tile col-3">
-                            <div clss="tileIMG">Image</div>
-                            <div class="name">Title</div>
-                            <div class="projectName">project name</div>
-                            <div class="tileContentToggle">></div>
-                        </div>
-                        <div class="tile col-3">
-                            <div clss="tileIMG">Image</div>
-                            <div class="name">Title</div>
-                            <div class="projectName">project name</div>
-                            <div class="tileContentToggle">></div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
+<!-- Portfolio section here -->
+<section class="mySkills">
+    <h2 class="blueText a-center"><a id="portfolio">PORTFOLIO</a></h2>
+        <div class="flexContainer">
+            <div class="skillsCard">
+                <img src="images/project1.png" alt="Cindy Chan" height="200px" />
+                <h3>Govt. Agency Redesign</h3>
+                <p>A responsive web redesign for a government agency! Specifically, resolving UI pain points that users experience while interacting with a website.
+                </p>
+            </div>
+            <div class="skillsCard">
+                <img src="images/project2.png" alt="Cindy Chan" height="200px"/>
+                <h3>Mobile App Design</h3>
+                <p>Designing a mobile travel app from scratch. Executing steps in the design thinking process, culminating in a completed case study and a low-fidelity prototype</p>
+            </div>
+            <div class="skillsCard">
+                <img src="images/project3.png" alt="Cindy Chan" height="200px" />
+                <h3>NGO Redesign</h3>
+                <p>Choosing a non-profit website and executing a high-fidelity responsive web redesign solution through a clickable prototype.</p>
+            </div>
         </div>
-
-        <!---->
-
-        <!-- Research Skills section here -->
-        <div class="container">
-            <section class="row">
-                <div class=" ">
-                    <div class="containedwidth a-center">
+</section>
+<!-- Research Skills section here -->
+        <section class="container">
+            <div class="containedwidth a-center">
                         <h2 class="blueText "><a id="skills">RESEARCH SKILLS</a></h2> <br>
                         <div class="pill">Interviews</div>
                         <div class="pill">Affinity Diagrams</div>
@@ -104,51 +89,42 @@
                         <div class="pill">User Journey Map</div>
                         <div class="pill">Card Sorting</div>
                         <div class="pill">Information Architecture</div>
-
-                    </div>
-                </div>
-            </section>
+            </div>
+        </section>
         </div>
         <!-- Design Skills section here -->
-        <div class="container">
-            <section class="row">
-                <div class=" ">
-                    <div class="containedwidth a-center">
-                        <h2 class="blueText "><a id="skills">DESIGN SKILLS
-                        </a></h2> <br>
+        <section class="container">
+            <div class="containedwidth a-center">
+                        <h2 class="blueText "><a id="skills">DESIGN SKILLS</a></h2> <br>
                         <div class="pill">Storyboarding</div>
                         <div class="pill">User Flow</div>
                         <div class="pill">User Journey Map</div>
                         <div class="pill">Site Mapping</div>
                         <div class="pill">Card Sorting</div>
                         <div class="pill">Web Content Accessibility Guidelines (WCAG)</div>
+                        <div class="pill">Responsive Design</div>
                         <div class="pill">Wireframing</div>
                         <div class="pill">Hi-Fi Clickable Prototype</div>
                         <div class="pill">Material UI</div>
                         <div class="pill">Human Interface Guidelines</div>
                         <div class="pill">Branding Style Guide</div>
                         <div class="pill">Gestalt Principles</div>
-                    </div>
-                </div>
-            </section>
+            </div>
+        </section>
         </div>
         <!-- Front End Skills section here -->
-        <div class="container">
-            <section class="row">
-                <div class=" ">
-                    <div class="containedwidth a-center">
-                        <h2 class="blueText "><a id="skills">FRONT END SKILLS
-                        </a></h2> <br>
+        <section class="container">
+            <div class="containedwidth a-center">
+                        <h2 class="blueText "><a id="skills">FRONT END SKILLS</a></h2> <br>
                         <div class="pill">HTML 5</div>
                         <div class="pill">CSS 3</div>
                         <div class="pill">Bootstrap</div>
                         <div class="pill">JavaScript</div>
+                        <div class="pill">JQuery</div>
                         <div class="pill">VS Code</div>
                         <div class="pill">GitHub</div>
-                        <div class="pill">Responsive Design</div>
+                        <div class="pill">Responsive Coding</div>
                         <div class="pill">Web performance optimization (WPO)</div>
-                        <div class="pill">Search engine optimization (SEO)</div>
-                    </div>
                 </div>
             </section>
         </div>
@@ -164,7 +140,8 @@
                 Made with ❤️ and ☕ <br />
                 © 2021 Cindy Chan
             </p>
+            <section>
+                <a href="#top"><img id="fixed-box" src="images/avatar.jpg" height="80px" alt="back to top"></a>
+              </section>
         </footer>
-
-</body>
 </html>
