@@ -12,10 +12,6 @@ body {
     margin: 0;
     padding: 0;
 }
-/* UI Interactions*/
-html {
-  scroll-behavior: smooth;
-}
 
 .top-nav {
     display: flex;
@@ -395,10 +391,11 @@ flex {
 }
 
 button {
-    padding: 10px;
-    border-radius: 8px;
-    border: 0;
-    background: var(--gray)
+  padding: 15px;
+  background-color: #373738;
+  color: white;
+  font-size: 15px;
+  border-radius: 4px;
 }
 
 button.a-center {
