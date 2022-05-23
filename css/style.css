@@ -392,7 +392,7 @@ flex {
 
 button {
   padding: 15px;
-  background-color: #373738;
+  background-color: #2978B5;
   color: white;
   font-size: 15px;
   border-radius: 4px;
@@ -522,8 +522,8 @@ li {
     font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
-    border: solid 1px #048d9b;
-    color: #048d9b;
+    border: solid 1px #2978B5;
+    color: #2978B5;
     background-color: white;
       display: inline-block;
     text-align: center;
@@ -542,16 +542,16 @@ li {
   
   button:hover {
     color: white;
-    background-color: #048d9b;
+    background-color: #2978B5;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px,
       rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
     font-weight: medium;
     text-decoration: none;
   }
   button:focus {
-    outline-width: 3px;
-    outline-style: dashed;
-    outline-color: #05b1c3;
+    color: white;
+    background-color: #2978B5;
+    font-weight: medium;
     text-decoration: none;
   }
   
